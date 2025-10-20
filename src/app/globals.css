@@ -1,1 +1,9 @@
 @import "tailwindcss";
+
+@media screen and (min-width: 769px) and (max-width: 822px) {
+  nav h1{
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  
+}
