@@ -1,11 +1,13 @@
 import Navbar from "./components/Navbar";
-import Button from '@mui/material/Button';
+import Demo from "./components/Demo";
+import Footer from "./components/Footer";
 
 export default function Project () {
     return (
         <main>
             <Navbar />
-            <Button variant="contained" color="primary">Material UI Button</Button>
+            <Demo />
+            <Footer />
         </main>
     )
 
