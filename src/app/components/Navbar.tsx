@@ -8,7 +8,7 @@ import CloseIcon from "@mui/icons-material/Close";
 export default function Navbar() {
     return (
         <nav className="h-[80px] bg-[#ebfdfe] text-black flex justify-between items-center px-4">
-            <h1 className="text-[28px] font-regular ml-8 mr-8">ConsultCorp</h1>
+            <h1 className="logo-head text-[28px] font-regular ml-8 mr-8">ConsultCorp</h1>
 
             <ul className="ml-auto mr-auto space-x-6
             hidden md:flex">
