@@ -1,7 +1,7 @@
 "use client";
 
-import { InputBase } from "@mui/material";
-import SearchIcon from "@mui/icons-material/Search";
+// import { InputBase } from "@mui/material";
+// import SearchIcon from "@mui/icons-material/Search";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 
@@ -21,7 +21,7 @@ export default function Navbar() {
 
             <div className="ml-4 mr-8 items-center space-x-3
             hidden md:flex">
-                <SearchIcon id="searchIcon" className="text-gray-400 cursor-pointer" style={{fontSize: "32px"}}/>
+                {/* <SearchIcon id="searchIcon" className="text-gray-400 cursor-pointer" style={{fontSize: "32px"}}/> */}
                 {/* this search bar should be work for all devices, will adjust later */}
                 {/* <div id="searchBar" className="flex absolute bg-gray-700 rounded px-3 py-1 top-[80px] right-[60px]">                
                     <InputBase
