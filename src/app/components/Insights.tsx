@@ -12,48 +12,51 @@ export default function Insights() {
     return (
         <div className="bg-white">
                     <h1 className='font-semibold pt-10  text-center
-                    sm:text-[28px] 
-                    text-[20px]'>Powerful functionality and data visualization tools</h1>
+                    text-[28px]'>Powerful functionality and data visualization tools</h1> 
                     <p className='text-center 
-                    md:px-[28%]
+                    text-[20px]
+                    md:px-[25%]
                     sm:px-[12%]
                     px-[10%]'>Uncover powerful insighs with ease - streamline your decisions with robust features and dynamic visualizations.</p>
         
                     <div className="grid gap-3 flex-wrap text-white px-[4%] mt-8 mb-20
                     md:grid-cols-4 
                     sm:grid-cols-2 ">
-                        <div className="bg-blue-900 px-10 py-6 space-y-4 hover:bg-blue-600 cursor-pointer">
+                        <div className="bg-blue-900 px-10 py-6 space-y-4 hover:bg-blue-600 cursor-pointer rounded-[10px]">
                             <StorageIcon fontSize='large'/>
-                            <h3 className="">Access to multiple Moody’s proprietary data types</h3>
+                            <h3 className="text-[20px]">Access to multiple Moody’s proprietary data types</h3>
                         </div>
-                        <div className="bg-blue-900 px-10 py-6 space-y-4 hover:bg-blue-600 cursor-pointer">
+                        <div className="bg-blue-900 px-10 py-6 space-y-4 hover:bg-blue-600 cursor-pointer rounded-[10px]">
                             <SearchIcon fontSize='large'/>
-                            <h3 className="">100s of search criteria so you can find companies with very precise profiles</h3>
+                            <h3 className="text-[20px]">100s of search criteria so you can find companies with very precise profiles</h3>
                         </div>
-                        <div className="bg-blue-900 px-10 py-6 space-y-4 hover:bg-blue-600 cursor-pointer">
-                            <AccountBoxIcon fontSize='large'/>      
-                            <h3 className="">Ownership explorer</h3>
-                        </div>
-                        <div className="bg-blue-900 px-10 py-6 space-y-4 hover:bg-blue-600 cursor-pointer">
-                            <NotificationsActiveIcon fontSize='large'/>
-                            <h3 className="">Powerful flexible data change and news alerts for monitoring</h3>
-                        </div>
-                        <div className="bg-blue-900 px-10 py-6 space-y-4 hover:bg-blue-600 cursor-pointer">
-                            <BarChartIcon fontSize='large'/>
-                            <h3 className="">Heat maps and graphs</h3>
-                        </div>
-                        <div className="bg-blue-900 px-10 py-6 space-y-4 hover:bg-blue-600 cursor-pointer">
-                            <PivotTableChartIcon fontSize='large'/>
-                            <h3 className="">Pivot analyses</h3>
-                        </div>
-                        <div className="bg-blue-900 px-10 py-6 space-y-4 hover:bg-blue-600 cursor-pointer">
+                        <div className="bg-blue-900 px-10 py-6 space-y-4 hover:bg-blue-600 cursor-pointer rounded-[10px]">
                             <InsertDriveFileIcon fontSize='large'/>
-                            <h3 className="">Add-ins populate Microsoft Office templates with live data from Orbis</h3>
+                            <h3 className="text-[20px]">Add-ins populate Microsoft Office templates with live data from Orbis</h3>
                         </div>
-                        <div className="bg-blue-900 px-10 py-6 space-y-4 hover:bg-blue-600 cursor-pointer">
+                        
+                        <div className="bg-blue-900 px-10 py-6 space-y-4 hover:bg-blue-600 cursor-pointer rounded-[10px]">
+                            <NotificationsActiveIcon fontSize='large'/>
+                            <h3 className="text-[20px]">Powerful flexible data change and news alerts for monitoring</h3>
+                        </div>
+                        
+                        <div className="bg-blue-900 px-10 py-6 space-y-4 hover:bg-blue-600 cursor-pointer rounded-[10px]">
+                            <PivotTableChartIcon fontSize='large'/>
+                            <h3 className="text-[20px]">Pivot analyses</h3>
+                        </div>
+                        <div className="bg-blue-900 px-10 py-6 space-y-4 hover:bg-blue-600 cursor-pointer rounded-[10px]">
+                            <AccountBoxIcon fontSize='large'/>      
+                            <h3 className="text-[20px]">Ownership explorer</h3>
+                        </div>
+                        <div className="bg-blue-900 px-10 py-6 space-y-4 hover:bg-blue-600 cursor-pointer rounded-[10px]">
                             <DescriptionIcon fontSize='large'/>
-                            <h3 className="">Flexible report ordering</h3>
+                            <h3 className="text-[20px]">Flexible report ordering</h3>
                         </div>
+                        <div className="bg-blue-900 px-10 py-6 space-y-4 hover:bg-blue-600 cursor-pointer rounded-[10px]">
+                            <BarChartIcon fontSize='large'/>
+                            <h3 className="text-[20px]">Heat maps and graphs</h3>
+                        </div>
+                        
                     </div>
                     
                 </div>
