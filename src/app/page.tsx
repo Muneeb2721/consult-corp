@@ -5,7 +5,7 @@ import Insights from "./components/Insights";
 
 import Demo from "./components/Demo";
 import Footer from "./components/Footer";
-import CaseStudies from "./components/Case";
+import Case from "./components/Case";
 
 export default function Project () {
     return (
@@ -14,7 +14,7 @@ export default function Project () {
             <Hero />
             <About />
             <Insights />
-            <CaseStudies />
+            <Case />
             <Demo />
             <Footer />
 

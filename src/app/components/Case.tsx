@@ -1,8 +1,6 @@
 import Image from 'next/image';
-import BarChartOutlinedIcon from '@mui/icons-material/BarChartOutlined';
-import GroupOutlinedIcon from '@mui/icons-material/GroupOutlined';
 
-export default function CaseStudies() {
+export default function Case() {
     return (
         <div className="bg-[#d5ffff]">
             <h1 className='font-semibold pt-10  text-center
