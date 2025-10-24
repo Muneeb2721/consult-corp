@@ -10,12 +10,25 @@ export default function Hero() {
         "/consulting3.jpg"
     ];
 
+    const taglines = [
+        "Transform Your Vision into Success with Consult Corp",
+        "Unlock Strategic Growth and Innovation with Consult Corp",
+        "Your Trusted Partner for Smarter, Scalable Business Solutions",
+        "Consult Corp — Guiding You from Challenges to Achievements"
+    ]
+
     const [currentIndex, setCurrentIndex] = useState(0);
+    const [currenttagline, setCurrentTagline] = useState(0);
 
     useEffect(() => {
         const interval = setInterval(() => {currentIndex < slides.length - 1 ? setCurrentIndex(currentIndex + 1) : setCurrentIndex(0)}, 10000);
         return () => clearInterval(interval);
     }, [currentIndex]);
+
+    useEffect(() => {
+        const intervalTagLine = setInterval(() => {currenttagline < taglines.length - 1 ? setCurrentTagline(currenttagline + 1) : setCurrentTagline(0)}, 10000);
+        return () => clearInterval(intervalTagLine);
+    }, [currenttagline]);
 
     return (
         <div className="carousel-container">
@@ -41,27 +54,35 @@ export default function Hero() {
                 </div>
                 
                 <div className="text-white flex flex-col items-center space-y-5 pt-20 pb-9">
-                   <h2 className='hero-title font-semibold text-center w-full
-                   text-2xl px-[8%]
-                   sm:text-4xl sm:px-[15%]
-                   md:text-4xl md:px-[23%]'>
-                        Empower Your Business with Expect Consulting
-                    </h2>
-                   <p className="hero-description text-center
-                   px-[10%]
-                   sm:px-[18%]
-                   md:px-[25%]">
+                   <h2 className={`hero-title font-semibold text-center w-full
+                    text-[36px] px-[5%]
+                    sm:text-[36px] sm:px-[10%]
+                    md:text-[36px] md:px-[15%]
+                    lg:px-[20%]
+                    xl:px-[24%]`}>
+                    {taglines.map( (tagline, index) => (
+                        <span className={`${currenttagline === index ? '' : 'hidden'}`}>{tagline}</span>
+
+                    ))}
+                   </h2>
+
+                   <p className="hero-description text-center text-[18px]
+                   px-[5%]
+                   sm:px-[10%]
+                   md:px-[15%]
+                   lg:px-[20%]
+                   xl:px-[24%]">
                         Transform your organization with strategic solutions tailored to your unique challenges and opportunities. Our expert team delivers results that matter.
                     </p>
                     <div className="hero-links flex gap-3">
-                        <a href="#" className="hero-link text-white bg-blue-600 rounded border-2 border-white hover:bg-transparent
+                        <a href="#" className="hero-link text-white text-[18px] bg-blue-700 rounded border-2 border-white hover:bg-transparent
                         px-2 py-2.5
                         sm:px-4 sm:py-2.5
                         ">Explore Services</a>
-                        <a href="#" className="hero-link text-white bg-transparent rounded border-2 border-white hover:bg-blue-600
+                        <a href="#" className="hero-link text-white text-[18px] bg-transparent rounded border-2 border-white hover:bg-blue-700
                         px-2 py-2.5
                         sm:px-4 sm:py-2.5
-                        ">View Case Studies</a>
+                        ">View Case Studies</a> 
                     </div>
                     <div className="indicators-links flex gap-2 pt-8">
                         <div className="bg-white w-[50px] h-[3px] rounded cursor-pointer"></div>
