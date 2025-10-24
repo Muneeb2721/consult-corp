@@ -1,7 +1,5 @@
-import CaseStudies from "../components/casestudies";
+import CaseStudies from "../components/Case";
 
-export default function CaseStudiesPage() {
-    return (
-        <CaseStudies />
-    );
+export default function CasePage() {
+    return <CaseStudies />
 }
