@@ -21,14 +21,13 @@ export default function Hero() {
     const [currenttagline, setCurrentTagline] = useState(0);
 
     useEffect(() => {
-        const interval = setInterval(() => {currentIndex < slides.length - 1 ? setCurrentIndex(currentIndex + 1) : setCurrentIndex(0)}, 10000);
-        return () => clearInterval(interval);
-    }, [currentIndex]);
-
-    useEffect(() => {
-        const intervalTagLine = setInterval(() => {currenttagline < taglines.length - 1 ? setCurrentTagline(currenttagline + 1) : setCurrentTagline(0)}, 10000);
-        return () => clearInterval(intervalTagLine);
-    }, [currenttagline]);
+        const interval = setInterval(() => {
+        setCurrentIndex(prev => (prev < slides.length - 1 ? prev + 1 : 0));
+        setCurrentTagline(prev => (prev < taglines.length - 1 ? prev + 1 : 0));
+    }, 10000);
+    return () => clearInterval(interval);
+        }, []
+    );
 
     return (
         <div className="carousel-container">
