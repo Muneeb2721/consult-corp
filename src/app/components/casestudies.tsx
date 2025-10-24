@@ -8,7 +8,7 @@ export default function CaseStudies() {
             <h1 className='font-semibold pt-10  text-center
             sm:text-[28px] 
             text-[24px]'>Featured Case Studies</h1>
-            <p className='text-center'>Explore how we&apos;ve helped organizations achieve remarkable results</p>
+            <p className='text-center'>Explore how we have helped organizations achieve remarkable results</p>
 
             <div className="flex gap-4 py-15
             md:flex-row
