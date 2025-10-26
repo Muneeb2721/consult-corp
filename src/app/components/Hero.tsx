@@ -19,6 +19,13 @@ export default function Hero() {
 
     const [currentIndex, setCurrentIndex] = useState(0);
     const [currenttagline, setCurrentTagline] = useState(0);
+    
+    useEffect(() => {
+    slides.forEach((slide) => {
+        const img = new window.Image();
+        img.src = slide;
+    });
+    }, []);
 
     useEffect(() => {
         const interval = setInterval(() => {currentIndex < slides.length - 1 ? setCurrentIndex(currentIndex + 1) : setCurrentIndex(0)}, 5000);
@@ -29,6 +36,8 @@ export default function Hero() {
         const intervalTagLine = setInterval(() => {currenttagline < taglines.length - 1 ? setCurrentTagline(currenttagline + 1) : setCurrentTagline(0)}, 5000);
         return () => clearInterval(intervalTagLine);
     }, [currenttagline]);
+
+    
 
     return (
         <div className="carousel-container">
@@ -45,6 +54,7 @@ export default function Hero() {
                             width={1920} 
                             height={420} 
                             className={`w-full object-cover ${currentIndex === index ? '' : 'hidden'}`}
+                            priority = {index === 0}
                         />
                         
                     ))
@@ -55,10 +65,10 @@ export default function Hero() {
                 
                 <div className="text-white flex flex-col items-center space-y-5 pt-20 pb-9">
                    <h2 className={`hero-title font-semibold text-center w-full
-                    text-[36px] px-[5%]
-                    sm:text-[36px] sm:px-[10%]
-                    md:text-[36px] md:px-[15%]
-                    lg:px-[20%]
+                    text-[26px] px-[5%]
+                    sm:text-[30px] sm:px-[10%]
+                    md:text-[33px] md:px-[15%]
+                    lg:text-[33px] lg:px-[20%]
                     xl:px-[24%]`}>
                     {taglines.map( (tagline, index) => (
                         <span key={index} className={`${currenttagline === index ? '' : 'hidden'}`}>{tagline}</span>
