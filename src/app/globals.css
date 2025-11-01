@@ -34,7 +34,11 @@
 
   .hamburgerIcon {
     margin-right: 0;
-  } 
+  }
+  
+  .feature-card {
+    word-wrap: break-word;
+  }
 }
 
 @media screen and (min-width: 0px) and (max-width: 200px) {
@@ -81,10 +85,6 @@
 
   .insight-box {
     padding: 15px 15px;
-  }
-
-  .feature-card {
-    word-wrap: break-word;
   }
 
   .feature-card-head, .feature-card-text {
