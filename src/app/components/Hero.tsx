@@ -63,7 +63,7 @@ export default function Hero() {
 
                 </div>
                 
-                <div className="text-white flex flex-col items-center space-y-5 pt-20 pb-9">
+                <div className="carousel-slide-div text-white flex flex-col items-center space-y-5 pt-20 pb-9">
                    <h2 className={`hero-title font-semibold text-center w-full
                     text-[26px] px-[5%]
                     sm:text-[30px] sm:px-[10%]

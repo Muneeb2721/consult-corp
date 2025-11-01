@@ -4,10 +4,17 @@
 // import SearchIcon from "@mui/icons-material/Search";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
+import { useState } from "react";
 
 export default function Navbar() {
+    const [navWork, setNavWork] = useState(false);
+
+    const toggleNav = () => {
+        setNavWork(!navWork);
+    };
+
     return (
-        <nav className="h-[80px] bg-[#ebfdfe] text-black flex justify-between items-center px-4">
+        <nav className="navbar-bar h-[80px] bg-[#ebfdfe] text-black flex justify-between items-center px-4">
             <h1 className="logo-head text-[28px] font-regular ml-8 mr-8 font-semibold tracking-[2px]">ConsultCorp</h1> 
 
             <ul className="ml-auto mr-auto space-x-6
@@ -39,12 +46,11 @@ export default function Navbar() {
             </div>
 
             <div className="hamburgerIcon md:hidden mr-8">
-                <MenuIcon className="text-black cursor-pointer" style={{ fontSize: "32px" }} />
+                <MenuIcon className="text-black cursor-pointer" style={{ fontSize: "32px" }} onClick={toggleNav} />
             </div>
 
-            <div className="mobileMenu hidden absolute bg-gray-700 text-white top-0 w-full h-full right-0 md:hidden">
-                
-                <CloseIcon className="absolute right-10 top-15 cursor-pointer text-white" style={{ fontSize: 32 }} />
+            <div className={`mobileMenu ${navWork ? 'block' : 'hidden'} absolute bg-gray-700 text-white top-0 w-full h-full right-0 md:hidden`}>
+                <CloseIcon className="absolute right-10 top-15 cursor-pointer text-white" style={{ fontSize: 32 }} onClick={toggleNav} />
 
                 <ul className="flex flex-col space-y-12 px-8 py-14">
                     <li className="text-[19px] text-white hover:text-blue-400 border-b-white hover:border-b-blue-400 border-b-2 w-fit cursor-pointer">Home</li>

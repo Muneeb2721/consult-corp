@@ -1,15 +1,14 @@
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import About from "./components/About";
-import Insights from "./components/Insights";
-
-import Demo from "./components/Demo";
-import Footer from "./components/Footer";
 import Case from "./components/Case";
+import Hero from "./components/Hero";
+import Demo from "./components/Demo";
+import About from "./components/About";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import Insights from "./components/Insights";
 
 export default function Project () {
     return (
-        <main>
+        <main className="">
             <Navbar />
             <Hero />
             <About />
@@ -17,7 +16,6 @@ export default function Project () {
             <Case />
             <Demo />
             <Footer />
-
         </main>
     )
 }

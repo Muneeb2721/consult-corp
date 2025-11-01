@@ -34,6 +34,78 @@
 
   .hamburgerIcon {
     margin-right: 0;
+  } 
+}
+
+@media screen and (min-width: 0px) and (max-width: 200px) {
+
+  .navbar-bar {
+    flex-direction: column;
+    padding: 10px 0px;
   }
 
+  .hero-title {
+    font-size: 16px;
+  }
+
+  .hero-link {
+    font-size: 14px;
+    padding: 10px 18px;
+  }
+
+  .indicators-links {
+    padding-top: 0px;
+  }
+
+  .carousel-slide-div {
+    padding-bottom: 10px;
+  }
+
+  .about-head, .insight-head{
+    font-size: 16px;
+    font-weight: 800;
+  }
+
+  .about-head-text, .insight-text, .feature-head-text, .feature-card-text  {
+    font-size: 14px;
+    /* text-align: center; */
+  }
+
+  .about-card-head, .insight-box-head, .feature-head, .feature-card-head, .footer-services, .footer-update-head  {
+    font-size: 16px;
+  }
+
+  .about-card-text, .feature-card-link, .footer-update-text {
+    font-size: 14px;
+  }
+
+  .insight-box {
+    padding: 15px 15px;
+  }
+
+  .feature-card-head, .feature-card-text {
+    padding: 0 5px;
+  }
+
+  .feature-card-link-div {
+    justify-content: start;
+    margin-left: 5px;
+  }
+
+  .demo-div {
+    padding: 38px 14px;
+  }
+
+  .demo-head, .footer-head {
+    font-size: 18px;
+  }
+
+  .demo-text, .footer-text, .footer-links, .footer-copyright  {
+    font-size: 14px;
+  }
+
+  .demo-button {
+    padding: 4px 8px;
+    font-size: 14px;
+  }
 }
