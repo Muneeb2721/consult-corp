@@ -58,7 +58,7 @@ export default function Navbar() {
                     <li className="text-[19px] text-white hover:text-blue-400 border-b-white hover:border-b-blue-400 border-b-2 w-fit cursor-pointer">Cases</li>
                     <li className="text-[19px] text-white hover:text-blue-400 border-b-white hover:border-b-blue-400 border-b-2 w-fit cursor-pointer">Insights</li>
                     <li className="text-[19px] text-white hover:text-blue-400 border-b-white hover:border-b-blue-400 border-b-2 w-fit cursor-pointer">Contact</li>
-                </ul>
+                </ul> 
 
                 <div className="px-8">
                     <button className="w-full bg-blue-700 text-white text-[18px] font-semibold px-10 py-2.5 rounded cursor-pointer">Login</button>
