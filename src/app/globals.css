@@ -83,6 +83,10 @@
     padding: 15px 15px;
   }
 
+  .feature-card {
+    word-wrap: break-word;
+  }
+
   .feature-card-head, .feature-card-text {
     padding: 0 5px;
   }
